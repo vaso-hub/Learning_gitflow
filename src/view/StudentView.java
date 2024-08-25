@@ -113,15 +113,5 @@ public class StudentView {
             students.forEach(System.out::println);
         }
     }// end viewAllStudents
-
-    private void searchStudentById() {
-        System.out.print("Enter student ID to search: ");
-        String id = scanner.nextLine();
-        Student student = controller.searchStudentById(id);
-        if (student == null) {
-            System.out.println("Student not found.");
-        } else {
-            System.out.println(student);
-        }
-    } // end searchStudentById
+    
 }
